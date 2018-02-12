@@ -190,8 +190,6 @@ def dict_strlist(msg,parent=None,encoding=None,dialog=None,progress=1,file=None)
 		if dialog and wx_imported:
 			if signal.isSet():
 				num+=1.0
-				#print '%d   %d   %d'%(i,count,maximum)
-				#wx.CallAfter(dialog.Update,int(num/count*maximum))
 				wx.CallAfter(UpdateDialog,dialog,int(num/count*maximum*progress),signal)
 			else:
 				#wx.CallAfter(UpdateDialog,dialog,maximum,signal)
