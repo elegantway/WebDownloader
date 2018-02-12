@@ -1,0 +1,1 @@
+pyinstaller -F -w --distpath D:\downloader --name WebDownloader Downloader.py
